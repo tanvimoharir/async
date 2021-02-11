@@ -10,7 +10,7 @@ logging.getLogger().setLevel(logging.INFO)
 
 def fetch_url(im_url):
     try:
-        resp = requests.get(im_url,verify=False)
+        resp = requests.get(im_url)
     except Exception as e:
         logging.info(e)
         logging.info('Could not fetch {}'.format(im_url))
