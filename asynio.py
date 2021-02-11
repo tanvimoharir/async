@@ -22,7 +22,7 @@ async def fetch(session,url):
     return
 
 async def fetch_async(loop,r):
-    url='https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-1.2.1'
+    url=''
     tasks=[]
     async with ClientSession() as session:
         for i in range(r):
